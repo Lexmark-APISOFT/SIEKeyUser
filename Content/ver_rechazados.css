@@ -1,0 +1,33 @@
+﻿#generar_rechzar_fam {
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    padding-left:29px;
+    padding-right:29px;
+    padding-bottom:5px;
+    padding-top:5px;
+    margin-top:2%;
+}
+
+#nombre_codigo {
+    font-family:Calibri Light;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/**************************************************/
+/*#tb_fam td{
+    padding:5px 10px 2px 10px;
+}*/
+
+div#center_rechazados {
+    margin:5% auto;
+    width:80%;
+}
+
+    div#center_rechazados table {
+        margin:2% auto;
+    }

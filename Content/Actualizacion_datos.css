@@ -1,0 +1,65 @@
+﻿#ac_generar {
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:19px;
+    padding-left:29px;
+    padding-right:29px;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+.ok_actdat {
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:18px;
+    padding-left:29px;
+    padding-right:29px;
+    padding-bottom:5px;
+    padding-top:5px;
+    margin-top:2%;
+}
+
+
+
+.gifLoading {
+    position: fixed;
+    top: 1000px;
+    right: 50%;
+}
+
+#irclinica {
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:18px;
+    padding-left:29px;
+    padding-right:29px;
+    padding-bottom:5px;
+    padding-top:5px;
+    margin-top:2%;
+    position:absolute;
+    left:15%;
+    bottom:15%;
+}
+
+/**************************************************/
+#tb_ac td{
+    padding:5px 10px 2px 10px;
+}
+
+div#center_ac {
+    margin: 5% auto;
+    width:95%;
+}
+
+    div#center_ac table {
+        margin:1% auto;
+    }

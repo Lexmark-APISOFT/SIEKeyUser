@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="_Layout.master.cs" Inherits="SIE_KEY_USER._Layout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta http-equiv="refresh" content="300" />
+    <meta charset="UTF-8" />
+
+    <title>KEY USER</title>
+    <link href="Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Default.css" rel="stylesheet" type="text/css" />
+    <link href="Content/MenuKey.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Desbloqueo.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Actualizacion_datos.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Vacaciones.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Agregar_familiares.css" rel="stylesheet" type="text/css" />
+    <link href="Content/ver_aceptados.css" rel="stylesheet" type="text/css" />
+    <link href="Content/ver_rechazados.css" rel="stylesheet" type="text/css" />
+    <link href="Content/reimpresion.css" rel="stylesheet" type="text/css" />
+    <link href="Content/modificar_cartas.css" rel="stylesheet" type="text/css" />
+    <link href="Content/prestamos.css" rel="stylesheet" type="text/css" />
+    <link href="Content/configurar_prestamo.css" rel="stylesheet" type="text/css" />
+    <link href="Content/confirmar_configuracion.css" rel="stylesheet" type="text/css" />
+    <link href="Content/familiar.css" rel="stylesheet" type="text/css" />
+    <link href="Content/opciones.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Confirmar_opciones.css" rel="stylesheet" type="text/css" />
+    <link href="Content/ver_prestamos.css" rel="stylesheet" type="text/css" />
+    <link href="Content/actualizar_clinica.css" rel="stylesheet" type="text/css" />  
+    <link href="Content/Reembolso_escolar.css" rel="stylesheet" type="text/css" />  
+    <link href="Content/Mantenimiento_Catalogos.css" rel="stylesheet" type="text/css" /> 
+    <link href="Content/solicitud_vacacionesRemastered.css" rel="stylesheet" type="text/css"/>
+    <!------------------------------------------------- JQUERY ---------------------------------------->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!------------------------------------------------- FIN ---------------------------------------->
+    
+    <!------------------------------------------------- JAVASCRIPT PARA COMPATIBILIDAD CSS CON IE68 ---------------------------------------->
+    <script type="text/javascript" src="../Scripts/respond_css/respond.min.js"></script>
+    <!------------------------------------------------- FIN ---------------------------------------->
+
+    <!-------------------------------------------------  CSS PARA DATATABLE MATRIZ DISPONIBILIDAD ---------------------------------------->
+    <link href="Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+    <!---------------------------------------- CSS PARA DATATABLE SOLICITUDES VACACIONES --------------------------------------------------->
+    <%--<link href="Content\DataTables\css\jquery.dataTablesSoli_vacaciones.css" rel="stylesheet" type="text/css" />--%>
+     
+    <!------------------------------------------------- FIN ---------------------------------------->
+
+
+    <!------------------------------------- SCRIPT ALERTA ------------------------------------->
+    <script type="text/javascript" src="../Scripts/alert.js"></script>
+    <%--<link href="Content/alert.css" rel="stylesheet" type="text/css" />--%>
+    <!------------------------------------------ FIN ------------------------------------------>
+    
+    <!--------------------------------------------- BOOTSTRAP MODAL - POPOVER ESTILO CSS y JAVASCRIPT ------------------------------------>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--------------------------------------------- FIN ------------------------------------>
+    
+</head>
+<body style="height:100%;">
+    
+    <div id="logo">
+        <img src="Images/LexmarkLogo_RGB_300.png" id="img" runat="server"/>
+    </div>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:Label ID="Label1" runat="server" Text="SIE RH" CssClass="leyenda"></asp:Label>
+
+    <!------------------------------------------------- JAVASCRIPT PARA DATATABLE MATRIZ DISPONIBILIDAD ---------------------------------------->
+     <script charset="utf-8" src="../Scripts/DataTables/jquery.dataTables.min.js" type="text/javascript" ></script>
+     <script type="text/javascript" src="../Scripts/DataTables/plug-ins/ellipsis.js"></script>
+    <!------------------------------------------------- FIN ---------------------------------------->
+
+     <asp:ContentPlaceHolder ID="cph_JS" runat="server">
+            <%--jquery, java script , data table java script comes here!!!--%>
+        </asp:ContentPlaceHolder>
+</body>
+</html>

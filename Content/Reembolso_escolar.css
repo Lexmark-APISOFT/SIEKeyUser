@@ -1,0 +1,229 @@
+﻿#Rechazados {
+    padding: 5px 29px;
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    margin-right:2%;
+    width:280px;
+    position:absolute;
+    left:60%;
+    top: 734px;
+}
+#Aceptados {
+    padding: 5px 29px;
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    margin-right:2%;
+    width:280px;
+    position:absolute;
+    left:60%;
+    top: 683px;
+}
+#PeryEsc {
+    padding: 5px 29px;
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    margin-right:2%;
+    width:423px;
+    position:absolute;
+    left:20%;
+    top: 683px;
+}
+#PorYPro {
+    padding: 5px 29px;
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    margin-right:2%;
+    width:423px;
+    position:absolute;
+    left:20%;
+    top:734px;
+}
+div #center_PorcProm {
+    
+    margin:20% auto;
+    width:80%;
+
+}
+#Grid_PorcentProm {
+    position:absolute;
+    top:176px;
+    left:1%;
+    width: 570px;
+}
+
+div #tabla_modifporcen {
+    margin:0% 0% 0% 5%;
+    height: 181px;
+    width: 268px;
+}
+#modif_agreg {
+    position:absolute;
+    margin:0% 0% 0% 5%;
+    width:21%;
+    top: 463px;
+    left: 32px;
+}
+#prom_Min {
+    position:absolute;
+    width:29%;
+    
+    margin-left: 0px;
+    top: 469px;
+    left: 447px;
+}
+#agregar {
+    position:absolute;
+   
+}
+#add_prom_porcen {
+    position:absolute;
+    top: 231px;
+    left: 593px;
+    height: 85px;
+    width: 225px;
+}
+#addpromporcen {
+    position:absolute;
+    top: 2px;
+    left: 7px;
+    height: 76px;
+    width: 210px;
+}
+div #modif_agreg_periodo {
+    position:absolute;
+    width:18%;
+    top:31%;
+    left:800px;
+    margin-top: 0px;
+    height: 220px;
+}
+#agregar_periodo {
+    position:absolute;
+    top: 2px;
+    left: 6px;
+}
+#agregar_escuela {
+    position:absolute;
+    top: 72px;
+    left: 17px;
+}
+#agregar_elemento {
+    position:absolute;
+    top: 131px;
+    left: 12px;
+}
+#botones_agreg {
+    position:absolute;
+    top:250px;
+    left:520px;
+    height: 545px;
+    width: 213px;
+}
+#Grid_Periodo {
+    position:absolute;
+    
+    left:30px;
+   
+    width: 500px;
+    top: 198px;
+    left: 40px;
+}
+#Grid_Eperiodo {
+    position:absolute;
+    
+    left:40px;
+   
+    width: 500px;
+    top: 400px;
+}
+#Grid_Escuelas {
+    position:absolute;
+    left:40px;
+    width:500px;
+    top: 601px;
+}
+#ModAdd {
+}
+#NoPeriodos {
+    padding: 5px 29px;
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    margin-right:2%;
+    width:94px;
+    position:absolute;
+    left:50%;
+    top: 337px;
+}
+#SiPeriodos {
+    padding: 5px 29px;
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    margin-right:2%;
+    width:94px;
+    position:absolute;
+    left:43%;
+    top: 337px;
+}
+#botones_add {    
+    
+    height: 546px;
+    width: 207px;
+}
+
+
+
+.grid1 {
+    text-align:center;
+    margin:0% auto 0% 0px;
+    font-size:18px;
+    font-family:Calibri Light;
+    padding-top: 0px;
+}
+
+    .grid1 th {
+        font-family:Calibri Light;
+        text-align:center;
+        background-color:rgb(155,187,89);
+        color:#fff;
+        border-color:#000;
+        border-top-width:2px;
+        border-bottom-width:2px;
+    }
+
+    .grid1 td {
+        padding:1%;
+        font-size:17px;
+        border-width :1px;
+    }
+
+    .grid1 .pgt td {
+        text-align: center;
+        font-size: 19px;
+        line-height: normal;
+        padding: 0 6px;
+        padding-top: 1%;
+    }

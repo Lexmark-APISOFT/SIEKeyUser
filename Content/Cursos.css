@@ -1,0 +1,453 @@
+﻿/* Estilo para ocultar el contenido del dropdown al principio */
+.dropdown-content {
+    display: none;
+}
+
+/* Estilo para el botón del dropdown */
+.dropdown-btn {
+    background-color:white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Estilo para las opciones del dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f1f1f1;
+}
+
+/* Estilo para las opciones al pasar el ratón sobre ellas */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.transparent-background {
+    background-color: rgb(0, 196, 37,0.32) !important; 
+}
+
+.filter-applied-container {
+    border: 1px solid green;
+}
+
+table.table-striped tbody tr:nth-of-type(odd) {
+    background-color:rgb(0,196,37,0.32) !important;
+}
+
+.menu-actions-courses {
+    border: 1px solid black;
+    border-width: 1px 0px 1px 0px;
+    margin-top: 35px;
+}
+.filter-applied-item {
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-right:1px solid black;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight:lighter;
+        color: #000000;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: #000000;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+
+@media screen and (max-height: 550px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+th{
+    text-align:center;
+    font-weight:bold;
+}
+
+body {
+    background-image:none !important;
+}
+a {
+    color:#000;
+}
+.glyphicon-transition {
+    transition: all 0.3s ease-in-out;
+}
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+
+.btn-back {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: 25px;
+}
+
+.title-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.caption {
+    height: 180px; /* Adjust this height as needed */
+}
+
+.button-group {
+    margin-top: 10px;
+}
+
+.header-titles {
+    font-size: 45px;
+    font-family: 'Century Gothic';
+    font-weight: bolder;
+}
+
+.thumbnails{
+    display:block;
+}
+    .thumbnails::-webkit-scrollbar {
+        width: min(1em, 0.5vw);
+        height: min(1em, 0.5vw);
+    }
+
+    .thumbnails::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom right, #BDBDBD 0%, #BDBDBD 100%);
+        border-radius: 5px;
+    }
+
+    .thumbnails::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+.detailsPSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 100%;
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: clip;
+    justify-content:center;
+    row-gap:20px;
+}
+    .detailsPSection::-webkit-scrollbar {
+        width: min(1em, 0.5vw);
+        height: min(1em, 0.5vw);
+    }
+
+    .detailsPSection::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom right, #BDBDBD 0%, #BDBDBD 100%);
+        border-radius: 5px;
+    }
+
+    .detailsPSection::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+.popupContainerSuperv {
+    position: fixed;
+    top: 25%;
+    min-height: 30%;
+    width: 40%;
+    border: 3px solid black;
+    background-color: white;
+    z-index: 100;
+}
+
+
+
+.popupContents {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .popupContents::-webkit-scrollbar {
+        width: min(1em, 0.5vw);
+        height: min(1em, 0.5vw);
+    }
+
+    .popupContents::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom right, #BDBDBD 0%, #BDBDBD 100%);
+        border-radius: 5px;
+    }
+
+    .popupContents::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+.btnSessions{
+    height:25%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+
+}
+
+.btnDetails {
+    height: 25%;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+    .btnDetails:hover {
+        background-color: grey;
+    }
+
+.thumbnailsCaptions {
+    overflow-x: scroll;
+    min-width: 95%;
+    max-width: 100%;
+    height:40%;
+}
+    .thumbnailsCaptions::-webkit-scrollbar {
+        width: min(1em, 0.5vw);
+        height: min(1em, 0.5vw);
+    }
+
+    .thumbnailsCaptions::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom right, #BDBDBD 0%, #BDBDBD 100%);
+        border-radius: 5px;
+    }
+
+    .thumbnailsCaptions::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+.ddModalSession{
+    height:100%;
+    width:100%;
+    font-size:min(3em,3vh);
+    text-align:center;
+}
+
+.ddModalSession option{
+    font-size: medium;
+    width:100% !important;
+}
+
+
+.divEventsInsideCalendarCell{
+    height:80%;
+    width:100%;
+    display:flex;
+    flex-direction:column-reverse;
+    gap:1px;
+}
+
+.divInscriptionsInsideCell{
+    background-color:coral;
+    height:10%;
+    width:100%;
+}
+
+.divCoursesInsideCell {
+    background-color: rgba(0, 255, 241, 174);
+    height: 10%;
+    width: 100%;
+}
+
+.tableColors {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    white-space:break-spaces;
+    word-wrap:break-word;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    text-align: start;
+    border-spacing: 12px;
+    border-color: gray;
+    font-variant: normal;
+    min-height:30%;
+    width:20%;
+}
+
+.popup-Details {
+    border: 5px solid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    min-height: 50%;
+    height: 50%;
+    width: 50%;
+    background-color: #C4FFC4;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.divEachEventDetails {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2px;
+    max-width: 90%;
+    min-width: 90%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    box-shadow: #DFFFDF 1px 1px 5px 10px;
+    height: fit-content;
+    background-color: #EDFFED;
+}
+
+.popupDetailsPs {
+    font-size: min(40em, 1.8vw);
+    overflow-wrap: break-word;
+    display: flex;
+    min-width: 90%;
+    word-break: break-all;
+}
+
+   /* .popupDetailsHeader::-webkit-scrollbar {
+        width: min(1em, 0.5vw);
+        height: min(1em, 0.5vw);
+    }
+
+    .popupDetailsHeader::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom right, #BDBDBD 0%, #BDBDBD 100%);
+        border-radius: 5px;
+    }
+
+    .popupDetailsHeader::-webkit-scrollbar-track {
+        background-color: transparent;
+    }*/
+
+.popupContainerSuperv {
+    position: fixed;
+    top: 25%;
+    min-height: 30%;
+    width: 40%;
+    border: 3px solid black;
+    background-color: white;
+    z-index: 100;
+}
+
+
+
+.popupContents {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .popupContents::-webkit-scrollbar {
+        width: min(1em, 0.5vw);
+        height: min(1em, 0.5vw);
+    }
+
+    .popupContents::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom right, #BDBDBD 0%, #BDBDBD 100%);
+        border-radius: 5px;
+    }
+
+    .popupContents::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+
+.popup-CourseDetails {
+    border: 5px solid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    min-height: 50%;
+    height: auto;
+    width: 50%;
+    background-color: white;
+}
+
+    .popup-CourseDetails::-webkit-scrollbar {
+        width: min(1em, 0.5vw);
+        height: min(1em, 0.5vw);
+    }
+
+    .popup-CourseDetails::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom right, #BDBDBD 0%, #BDBDBD 100%);
+        border-radius: 5px;
+    }
+
+    .popup-CourseDetails::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+.popupCourseDetailsPs {
+    font-size: min(40em, 2vw);
+    text-align: center;
+    text-overflow: clip;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: flex;
+    width: 100%;
+}
+
+    .popupCourseDetailsPs::-webkit-scrollbar {
+        width: min(1em, 0.5vw);
+        height: min(1em, 0.5vw);
+    }
+
+    .popupCourseDetailsPs::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom right, #BDBDBD 0%, #BDBDBD 100%);
+        border-radius: 5px;
+    }
+
+    .popupCourseDetailsPs::-webkit-scrollbar-track {
+        background-color: transparent;
+    }

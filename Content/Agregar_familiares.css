@@ -1,0 +1,109 @@
+﻿#aceptar_fam {
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    padding-left:29px;
+    padding-right:29px;
+    padding-bottom:5px;
+    padding-top:5px;
+    margin-top:2%;
+    margin-right:2%;
+}
+
+.rechazar_fam {
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    padding-left:29px;
+    padding-right:29px;
+    padding-bottom:5px;
+    padding-top:5px;
+    margin-top:auto;
+}
+
+.agregar_ver {
+    font-size:25px;
+}
+
+#loading {
+    width:48%;
+}
+
+#wdtd {
+    width:100px;
+}
+
+.boundAgreg {
+    display:none;
+}
+
+#mensaje {
+    font-family: Calibri Light;
+    font-size:20px;
+    font-weight: bold;
+    color: red;
+    margin-top: 2%;
+    display: block;
+}
+
+#area_txtAgreg {
+    width:80%;
+    margin-bottom:5%;
+}
+
+/**************************************************/
+#tb_fam td{
+    padding:5px 10px 2px 10px;
+}
+
+#tb_fam_ver {
+    position:absolute;
+    bottom:20%;
+    left:10%;
+}
+
+div#center_fam {
+    margin:5% auto;
+    width:90%;
+}
+
+    div#center_fam table {
+        margin:0% auto;
+        margin-bottom:2%;
+    }
+.FamAcept {
+    padding: 5px 29px;
+    position:absolute;
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    margin-top:2%;
+    margin-right:2%;
+    top: 687px;
+    left: 190px;
+    width:220px;
+}
+.FamRech {
+    padding: 5px 29px;
+    position:absolute;
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    margin-top:2%;
+    margin-right:2%;
+    top: 747px;
+    left: 190px;
+    width:220px;
+}

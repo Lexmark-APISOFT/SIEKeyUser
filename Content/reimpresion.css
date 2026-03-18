@@ -1,0 +1,70 @@
+﻿.txtmount {
+    font-family:Calibri Light;
+    font-size:15px;
+    width:80px;
+}
+
+.no_aplica {
+    font-family:Calibri Light;
+    font-size:15px;
+    color:red;
+    font-weight:bold;
+}
+
+#imprimir_cartas {
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    padding-left:29px;
+    padding-right:29px;
+    padding-bottom:5px;
+    padding-top:5px;
+    margin-top:2%;
+    margin-right:2%;
+}
+
+#modificar {
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    padding-bottom:5px;
+    padding-top:5px;
+    white-space: normal;
+    width: 250px;
+    position:absolute;
+    left:200px;
+}
+
+/**************************************************/
+#tb_reimpresion td{
+    padding:5px 10px 20px 10px;
+}
+
+div#center_reimpresion {
+    margin:5% auto;
+    width:80%;
+}
+
+    div#center_reimpresion table {
+        margin:1% auto;
+    }
+
+.hide-element {
+    display:none;
+}
+
+.show-element {
+    display: inline-block !important;
+}
+
+.disabled-button {
+    pointer-events: none !important;
+    opacity: 0.5 !important; /* Optional: To visually indicate that the button is disabled */
+    cursor: not-allowed !important; /* Optional: To change the cursor when hovering over the disabled button */
+}

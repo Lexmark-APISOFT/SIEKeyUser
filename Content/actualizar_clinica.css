@@ -1,0 +1,28 @@
+﻿.clinica_actualizar {
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:18px;
+    padding-left:29px;
+    padding-right:29px;
+    padding-bottom:5px;
+    padding-top:5px;
+    margin-top:2%;
+}
+
+
+/**************************************************/
+#tb_ac_clinica td{
+    padding:5px 10px 2px 10px;
+}
+
+div#clinica_center {
+    margin: 5% auto;
+    width:48%;
+}
+
+    div#clinica_ac table {
+        margin:1% auto;
+    }

@@ -1,0 +1,213 @@
+﻿#mant_catalogos_form {    
+}
+
+#center_ClinCorr {
+    position:absolute;
+    left:10%;
+    width:80%;
+    top: 86px;
+    height: 93px;
+    bottom: 213px;
+}
+#Grid_Clinica {
+    position:absolute;
+    top: 83px;
+    left: -112px;
+}
+#Grid_Correo {
+    position:absolute;
+    top: 150px;
+    left: -102px;
+}
+#botones_agreg_catalogos {
+    position:absolute;
+    top: 280px;
+    left: -75px;
+    height: 50px;
+    width: 234px;
+}
+#botones_agreg_catalogosimss {
+    position:absolute;
+    top: 240px;
+    left: -75px;
+    height: 50px;
+    width: 234px;
+}
+#botones_add_catalogos {
+    width:225px;
+    height: 51px;
+}
+#modif_agreg_catalogos {
+    position:absolute;
+    top: 150px;
+    left: 583px;
+    width: 433px;
+}
+#tabla_modifcatalogo {
+    width:430px;
+}
+#botones_agreg_dominio {  
+    position:absolute;
+    top: 370px;
+    left: -52px;
+    width: 224px;
+    height: 48px;
+}
+#botones_agreg_dominioparent {  
+    position:absolute;
+    top: 560px;
+    left: -52px;
+    width: 224px;
+    height: 48px;
+}
+#botones_add_dominio {    
+    position:absolute;
+    top: 6px;
+    left: 6px;
+}
+
+#botones_catalogos {
+    position:absolute;
+    top: 405px;
+    left: 500px;
+    height: 129px;
+    width: 392px;
+}
+#enlCatalogos {
+    position:absolute;
+    top: 6px;
+    left: 4px;
+    height: 114px;
+    width: 380px;
+}
+#cat_sig {
+     padding: 5px 29px;
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    margin-right:2%;
+    
+    
+}
+#cat_tress {
+    padding: 5px 29px;
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    margin-right:2%;
+    
+}
+#Grid_IMSS {
+    position:absolute;
+    top: 84px;
+    left: -112px;
+}
+#Grid_Desparent {
+    position:absolute;
+    top: 354px;
+    left: -112px;
+}
+#botones_TRESS {
+    position:absolute;
+    top: 199px;
+    left: 122px;
+    height: 337px;
+    width: 224px;
+}
+#CatTRESS {
+    position:absolute;
+    top: 7px;
+    left: 7px;
+    height: 328px;
+    width: 187px;
+}
+#Grid_TRESS {
+    position:absolute;
+    top: 7px;
+    left: 6px;
+    width: 448px;
+    
+}
+.btnTRESS {
+    padding: 5px 29px;
+    background-color: rgb(0, 173, 33);
+    border-color: rgb(0, 173, 33);
+    color: #fff;
+    font-weight: bold;
+    font-family: Calibri Light;
+    font-size: 20px;
+    margin-right: 2%;
+    width: 200px;
+}
+.btnCAT {
+    padding: 5px 29px;
+    background-color: rgb(0, 173, 33);
+    border-color: rgb(0, 173, 33);
+    color: #fff;
+    font-weight: bold;
+    font-family: Calibri Light;
+    font-size: 20px;
+    margin-right: 2%;
+    width: 300px;
+}
+#GuardarTRESS 
+{
+    position: absolute;
+    top: -2px;
+    left: 16px;
+}
+#btnGuardarTRESS {
+    position:absolute;
+    top: 580px;
+    left: 665px;
+    height: 31px;
+    width: 121px;
+}
+#btnActualizarTRESS {
+    position:absolute;
+    top: 344px;
+    left: 1026px;
+    height: 49px;
+    width: 228px;
+}
+#divgridover {
+    position:absolute;
+}
+
+.grid1 {
+    text-align:center;
+    margin:0% auto 0% 0px;
+    font-size:18px;
+    font-family:Calibri Light;
+    padding-top: 0px;
+}
+
+    .grid1 th {
+        font-family:Calibri Light;
+        text-align:center;
+        background-color:rgb(155,187,89);
+        color:#fff;
+        border-color:#000;
+        border-top-width:2px;
+        border-bottom-width:2px;
+    }
+
+    .grid1 td {
+        padding:1%;
+        font-size:17px;
+        border-width :1px;
+    }
+
+    .grid1 .pgt td {
+        text-align: center;
+        font-size: 19px;
+        line-height: normal;
+        padding: 0 6px;
+        padding-top: 1%;
+    }

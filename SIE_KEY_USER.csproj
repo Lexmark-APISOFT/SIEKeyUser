@@ -1,0 +1,1396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{368D16E9-1CD7-4CD1-81DE-D8B6B4616C0F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SIE_KEY_USER</RootNamespace>
+    <AssemblyName>SIE_KEY_USER</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\AspNet.ScriptManager.jQuery.3.6.0\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined, Version=1.11.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.12.1\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DocX, Version=1.0.0.19, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\SIE\packages\DocX.1.0.0.19\lib\net40\DocX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\DotNetOpenAuth.AspNet.4.3.4.13329\lib\net45-full\DotNetOpenAuth.AspNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\DotNetOpenAuth.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\DotNetOpenAuth.OAuth.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\DotNetOpenAuth.OAuth.Consumer.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\DotNetOpenAuth.OpenId.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OpenId.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\..\Users\amarquezesqu\Desktop\AndyV\dlls\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.AspNet.Membership.OpenAuth.2.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Word.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MsBarco, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SIE\SIE\LIB\MsBarco.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\System.Web.Http.Common.4.0.20126.16343\lib\net40\System.Web.Http.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Document.NET, Version=2.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\DocX.2.4.0\lib\net40\Xceed.Document.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Words.NET, Version=2.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\DocX.2.4.0\lib\net40\Xceed.Words.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Actualizacion_datos.css" />
+    <Content Include="Content\actualizar_clinica.css" />
+    <Content Include="Content\Agregar_familiares.css" />
+    <Content Include="Content\bootstrap-3.3.5-dist\css\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-3.3.5-dist\css\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap-3.3.5-dist\css\bootstrap.css" />
+    <Content Include="Content\bootstrap-3.3.5-dist\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap-3.3.5-dist\js\bootstrap.js" />
+    <Content Include="Content\bootstrap-3.3.5-dist\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrap-3.3.5-dist\js\npm.js" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Calendar.css" />
+    <Content Include="Content\configurar_prestamo.css" />
+    <Content Include="Content\confirmar_configuracion.css" />
+    <Content Include="Content\Confirmar_opciones.css" />
+    <Content Include="Content\DataTables\css\autoFill.bootstrap.css" />
+    <Content Include="Content\DataTables\css\autoFill.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\autoFill.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\autoFill.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\autoFill.dataTables.css" />
+    <Content Include="Content\DataTables\css\autoFill.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\autoFill.foundation.css" />
+    <Content Include="Content\DataTables\css\autoFill.foundation.min.css" />
+    <Content Include="Content\DataTables\css\autoFill.jqueryui.css" />
+    <Content Include="Content\DataTables\css\autoFill.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\autoFill.semanticui.css" />
+    <Content Include="Content\DataTables\css\autoFill.semanticui.min.css" />
+    <Content Include="Content\DataTables\css\buttons.bootstrap.css" />
+    <Content Include="Content\DataTables\css\buttons.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\buttons.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\buttons.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\buttons.dataTables.css" />
+    <Content Include="Content\DataTables\css\buttons.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\buttons.foundation.css" />
+    <Content Include="Content\DataTables\css\buttons.foundation.min.css" />
+    <Content Include="Content\DataTables\css\buttons.jqueryui.css" />
+    <Content Include="Content\DataTables\css\buttons.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\buttons.semanticui.css" />
+    <Content Include="Content\DataTables\css\buttons.semanticui.min.css" />
+    <Content Include="Content\DataTables\css\colReorder.bootstrap.css" />
+    <Content Include="Content\DataTables\css\colReorder.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\colReorder.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\colReorder.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\colReorder.dataTables.css" />
+    <Content Include="Content\DataTables\css\colReorder.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\colReorder.foundation.css" />
+    <Content Include="Content\DataTables\css\colReorder.foundation.min.css" />
+    <Content Include="Content\DataTables\css\colReorder.jqueryui.css" />
+    <Content Include="Content\DataTables\css\colReorder.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\colReorder.semanticui.css" />
+    <Content Include="Content\DataTables\css\colReorder.semanticui.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.bootstrap.css" />
+    <Content Include="Content\DataTables\css\dataTables.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.foundation.css" />
+    <Content Include="Content\DataTables\css\dataTables.foundation.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.jqueryui.css" />
+    <Content Include="Content\DataTables\css\dataTables.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.material.css" />
+    <Content Include="Content\DataTables\css\dataTables.material.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.semanticui.css" />
+    <Content Include="Content\DataTables\css\dataTables.semanticui.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.uikit.css" />
+    <Content Include="Content\DataTables\css\dataTables.uikit.min.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.bootstrap.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.dataTables.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.foundation.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.foundation.min.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.jqueryui.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.semanticui.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.semanticui.min.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.bootstrap.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.dataTables.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.foundation.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.foundation.min.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.jqueryui.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.semanticui.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.semanticui.min.css" />
+    <Content Include="Content\DataTables\css\jquery.dataTables.css" />
+    <Content Include="Content\DataTables\css\jquery.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\jquery.dataTablesSoli_vacaciones.css" />
+    <Content Include="Content\DataTables\css\jquery.dataTables_themeroller.css" />
+    <Content Include="Content\DataTables\css\keyTable.bootstrap.css" />
+    <Content Include="Content\DataTables\css\keyTable.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\keyTable.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\keyTable.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\keyTable.dataTables.css" />
+    <Content Include="Content\DataTables\css\keyTable.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\keyTable.foundation.css" />
+    <Content Include="Content\DataTables\css\keyTable.foundation.min.css" />
+    <Content Include="Content\DataTables\css\keyTable.jqueryui.css" />
+    <Content Include="Content\DataTables\css\keyTable.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\keyTable.semanticui.css" />
+    <Content Include="Content\DataTables\css\keyTable.semanticui.min.css" />
+    <Content Include="Content\DataTables\css\responsive.bootstrap.css" />
+    <Content Include="Content\DataTables\css\responsive.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\responsive.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\responsive.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\responsive.dataTables.css" />
+    <Content Include="Content\DataTables\css\responsive.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\responsive.foundation.css" />
+    <Content Include="Content\DataTables\css\responsive.foundation.min.css" />
+    <Content Include="Content\DataTables\css\responsive.jqueryui.css" />
+    <Content Include="Content\DataTables\css\responsive.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\responsive.semanticui.css" />
+    <Content Include="Content\DataTables\css\responsive.semanticui.min.css" />
+    <Content Include="Content\DataTables\css\rowGroup.bootstrap.css" />
+    <Content Include="Content\DataTables\css\rowGroup.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\rowGroup.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\rowGroup.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\rowGroup.dataTables.css" />
+    <Content Include="Content\DataTables\css\rowGroup.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\rowGroup.foundation.css" />
+    <Content Include="Content\DataTables\css\rowGroup.foundation.min.css" />
+    <Content Include="Content\DataTables\css\rowGroup.jqueryui.css" />
+    <Content Include="Content\DataTables\css\rowGroup.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\rowGroup.semanticui.css" />
+    <Content Include="Content\DataTables\css\rowGroup.semanticui.min.css" />
+    <Content Include="Content\DataTables\css\rowReorder.bootstrap.css" />
+    <Content Include="Content\DataTables\css\rowReorder.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\rowReorder.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\rowReorder.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\rowReorder.dataTables.css" />
+    <Content Include="Content\DataTables\css\rowReorder.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\rowReorder.foundation.css" />
+    <Content Include="Content\DataTables\css\rowReorder.foundation.min.css" />
+    <Content Include="Content\DataTables\css\rowReorder.jqueryui.css" />
+    <Content Include="Content\DataTables\css\rowReorder.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\rowReorder.semanticui.css" />
+    <Content Include="Content\DataTables\css\rowReorder.semanticui.min.css" />
+    <Content Include="Content\DataTables\css\scroller.bootstrap.css" />
+    <Content Include="Content\DataTables\css\scroller.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\scroller.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\scroller.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\scroller.dataTables.css" />
+    <Content Include="Content\DataTables\css\scroller.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\scroller.foundation.css" />
+    <Content Include="Content\DataTables\css\scroller.foundation.min.css" />
+    <Content Include="Content\DataTables\css\scroller.jqueryui.css" />
+    <Content Include="Content\DataTables\css\scroller.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\scroller.semanticui.css" />
+    <Content Include="Content\DataTables\css\scroller.semanticui.min.css" />
+    <Content Include="Content\DataTables\css\select.bootstrap.css" />
+    <Content Include="Content\DataTables\css\select.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\select.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\select.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\select.dataTables.css" />
+    <Content Include="Content\DataTables\css\select.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\select.foundation.css" />
+    <Content Include="Content\DataTables\css\select.foundation.min.css" />
+    <Content Include="Content\DataTables\css\select.jqueryui.css" />
+    <Content Include="Content\DataTables\css\select.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\select.semanticui.css" />
+    <Content Include="Content\DataTables\css\select.semanticui.min.css" />
+    <Content Include="Content\DataTables\images\details_close.png" />
+    <Content Include="Content\DataTables\images\details_open.png" />
+    <Content Include="Content\DataTables\images\sort_asc.png" />
+    <Content Include="Content\DataTables\images\sort_asc_disabled.png" />
+    <Content Include="Content\DataTables\images\sort_both.png" />
+    <Content Include="Content\DataTables\images\sort_desc.png" />
+    <Content Include="Content\DataTables\images\sort_desc_disabled.png" />
+    <Content Include="Content\DataTables\swf\flashExport.swf" />
+    <Content Include="Content\Default.css" />
+    <Content Include="Content\Desbloqueo.css" />
+    <Content Include="Content\familiar.css" />
+    <Content Include="Content\jquery.dataTables.min.css" />
+    <Content Include="Content\Mantenimiento_Catalogos.css" />
+    <Content Include="Content\MenuKey.css" />
+    <Content Include="Content\modificar_cartas.css" />
+    <Content Include="Content\opciones.css" />
+    <Content Include="Content\PIE.htc" />
+    <Content Include="Content\prestamos.css" />
+    <Content Include="Content\Reembolso_escolar.css" />
+    <Content Include="Content\reimpresion.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\solicitud_vacacionesRemastered.css" />
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="Content\cursos.css" />
+    <Content Include="Content\themes\matriz_disponibilidad.css" />
+    <Content Include="Content\Vacaciones.css" />
+    <Content Include="Content\ver_aceptados.css" />
+    <Content Include="Content\ver_prestamos.css" />
+    <Content Include="Content\ver_rechazados.css" />
+    <Content Include="Images\imgsCourses\img\no.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM1-1.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM1-2.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM1-3.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM1-4.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM1-5.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM2-1.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM2-2.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM2-3.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM2-4.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM3-2.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM4-1.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM4-2.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM4-3.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM4-4.PNG" />
+    <Content Include="Images\imgsCourses\img\NSM5-2.PNG" />
+    <Content Include="Images\imgsCourses\img\REG100.PNG" />
+    <Content Include="Images\imgsCourses\img\REG114.PNG" />
+    <Content Include="Images\imgsCourses\img\REG118.PNG" />
+    <Content Include="Images\imgsCourses\img\REG160.PNG" />
+    <Content Include="Images\imgsCourses\img\REG165.PNG" />
+    <Content Include="Images\imgsCourses\img\REG168.PNG" />
+    <Content Include="Images\imgsCourses\img\REG226.PNG" />
+    <Content Include="Images\imgsCourses\img\REG230.PNG" />
+    <Content Include="Images\imgsCourses\img\REG250.PNG" />
+    <Content Include="Images\imgsCourses\img\REG261.PNG" />
+    <Content Include="Images\imgsCourses\img\REG265.PNG" />
+    <Content Include="Images\imgsCourses\img\REG267.PNG" />
+    <Content Include="Images\imgsCourses\img\REG271.PNG" />
+    <Content Include="Images\imgsCourses\img\REG362.PNG" />
+    <Content Include="Images\imgsCourses\img\REG423.PNG" />
+    <Content Include="Images\img\alt.jpg" />
+    <Content Include="Views\Cursos\CoursesReports.aspx" />
+    <Content Include="Views\Cursos\EnrolledEmployee.aspx" />
+    <Content Include="Views\Cursos\MenuSessions.aspx" />
+    <Content Include="Views\Cursos\Reprogramming.aspx" />
+    <Content Include="Views\Cursos\SessionAttendance.aspx" />
+    <Content Include="Views\Cursos\MenuCourses.aspx" />
+    <Content Include="Views\Cursos\Sessions.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\back.PNG" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\calendar.png" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\impresion.png" />
+    <Content Include="Images\LexmarkLogo_RGB_300.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\MenuKey\actualizacion.png" />
+    <Content Include="Images\MenuKey\actualizar_ubicacion.png" />
+    <Content Include="Images\MenuKey\agregar_familiares.png" />
+    <Content Include="Images\MenuKey\catalogos.png" />
+    <Content Include="Images\MenuKey\Catalogo_de_certificaciones.png" />
+    <Content Include="Images\MenuKey\cursos_regulatorios.png" />
+    <Content Include="Images\MenuKey\desbloqueo.png" />
+    <Content Include="Images\MenuKey\escanearSolicitudes.png" />
+    <Content Include="Images\MenuKey\modificar_carta.png" />
+    <Content Include="Images\MenuKey\no diponible\actualizacion.png" />
+    <Content Include="Images\MenuKey\no diponible\agregar_familiares.png" />
+    <Content Include="Images\MenuKey\no diponible\catalogos.png" />
+    <Content Include="Images\MenuKey\no diponible\desbloqueo.png" />
+    <Content Include="Images\MenuKey\no diponible\modificar_carta.png" />
+    <Content Include="Images\MenuKey\no diponible\opciones_kiosko.png" />
+    <Content Include="Images\MenuKey\no diponible\prestamos.png" />
+    <Content Include="Images\MenuKey\no diponible\reembolso_escolar.png" />
+    <Content Include="Images\MenuKey\no diponible\reimpresion_cartas.png" />
+    <Content Include="Images\MenuKey\no diponible\vacaciones.png" />
+    <Content Include="Images\MenuKey\opciones_kiosko.png" />
+    <Content Include="Images\MenuKey\prestamos.png" />
+    <Content Include="Images\MenuKey\reembolso_escolar.png" />
+    <Content Include="Images\MenuKey\reimpresion_cartas.png" />
+    <Content Include="Images\MenuKey\vacaciones.png" />
+    <Content Include="Images\search.PNG" />
+    <Content Include="Images\search2.png" />
+    <Content Include="Images\transaction.png" />
+    <Content Include="Images\undo.png" />
+    <Content Include="LIB\MsBarco.dll" />
+    <Content Include="Content\bootstrap-3.3.5-dist\css\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-3.3.5-dist\css\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\DataTables\css\common.scss" />
+    <Content Include="Content\DataTables\css\mixins.scss" />
+    <Content Include="Content\DataTables\css\semanticui.scss" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile10.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile11.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile12.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile13.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile14.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile15.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile16.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile17.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile18.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile5.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile6.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile7.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile8.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile9.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap\activar_alCompletar.js" />
+    <Content Include="Scripts\bootstrap\modal_popup.js" />
+    <Content Include="Scripts\bootstrap\Motrar_ValorFileUpload.js" />
+    <Content Include="Scripts\bootstrap\popover_ayuda.js" />
+    <Content Include="Scripts\click_bttn\click_btnn.js" />
+    <Content Include="Scripts\compatibility_ie8\html5shiv.js" />
+    <Content Include="Scripts\compatibility_ie8\respond.js" />
+    <Content Include="Scripts\dataTables.bootstrap.min.js" />
+    <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
+    <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
+    <Content Include="Scripts\DataTables\autoFill.bootstrap4.js" />
+    <Content Include="Scripts\DataTables\autoFill.bootstrap4.min.js" />
+    <Content Include="Scripts\DataTables\autoFill.foundation.js" />
+    <Content Include="Scripts\DataTables\autoFill.foundation.min.js" />
+    <Content Include="Scripts\DataTables\autoFill.jqueryui.js" />
+    <Content Include="Scripts\DataTables\autoFill.jqueryui.min.js" />
+    <Content Include="Scripts\DataTables\autoFill.semanticui.js" />
+    <Content Include="Scripts\DataTables\autoFill.semanticui.min.js" />
+    <Content Include="Scripts\DataTables\buttons.bootstrap.js" />
+    <Content Include="Scripts\DataTables\buttons.bootstrap.min.js" />
+    <Content Include="Scripts\DataTables\buttons.bootstrap4.js" />
+    <Content Include="Scripts\DataTables\buttons.bootstrap4.min.js" />
+    <Content Include="Scripts\DataTables\buttons.colVis.js" />
+    <Content Include="Scripts\DataTables\buttons.colVis.min.js" />
+    <Content Include="Scripts\DataTables\buttons.flash.js" />
+    <Content Include="Scripts\DataTables\buttons.flash.min.js" />
+    <Content Include="Scripts\DataTables\buttons.foundation.js" />
+    <Content Include="Scripts\DataTables\buttons.foundation.min.js" />
+    <Content Include="Scripts\DataTables\buttons.html5.js" />
+    <Content Include="Scripts\DataTables\buttons.html5.min.js" />
+    <Content Include="Scripts\DataTables\buttons.jqueryui.js" />
+    <Content Include="Scripts\DataTables\buttons.jqueryui.min.js" />
+    <Content Include="Scripts\DataTables\buttons.print.js" />
+    <Content Include="Scripts\DataTables\buttons.print.min.js" />
+    <Content Include="Scripts\DataTables\buttons.semanticui.js" />
+    <Content Include="Scripts\DataTables\buttons.semanticui.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.autoFill.js" />
+    <Content Include="Scripts\DataTables\dataTables.autoFill.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.bootstrap.js" />
+    <Content Include="Scripts\DataTables\dataTables.bootstrap.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.bootstrap4.js" />
+    <Content Include="Scripts\DataTables\dataTables.bootstrap4.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.buttons.js" />
+    <Content Include="Scripts\DataTables\dataTables.buttons.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.colReorder.js" />
+    <Content Include="Scripts\DataTables\dataTables.colReorder.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.fixedColumns.js" />
+    <Content Include="Scripts\DataTables\dataTables.fixedColumns.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.fixedHeader.js" />
+    <Content Include="Scripts\DataTables\dataTables.fixedHeader.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.foundation.js" />
+    <Content Include="Scripts\DataTables\dataTables.foundation.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.jqueryui.js" />
+    <Content Include="Scripts\DataTables\dataTables.jqueryui.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.keyTable.js" />
+    <Content Include="Scripts\DataTables\dataTables.keyTable.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.material.js" />
+    <Content Include="Scripts\DataTables\dataTables.material.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.responsive.js" />
+    <Content Include="Scripts\DataTables\dataTables.responsive.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.rowGroup.js" />
+    <Content Include="Scripts\DataTables\dataTables.rowGroup.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.rowReorder.js" />
+    <Content Include="Scripts\DataTables\dataTables.rowReorder.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.scroller.js" />
+    <Content Include="Scripts\DataTables\dataTables.scroller.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.select.js" />
+    <Content Include="Scripts\DataTables\dataTables.select.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.semanticui.js" />
+    <Content Include="Scripts\DataTables\dataTables.semanticui.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.uikit.js" />
+    <Content Include="Scripts\DataTables\dataTables.uikit.min.js" />
+    <Content Include="Scripts\DataTables\jquery.dataTables.js" />
+    <Content Include="Scripts\DataTables\jquery.dataTables.min.js" />
+    <Content Include="Scripts\DataTables\plug-ins\ellipsis.js" />
+    <Content Include="Scripts\DataTables\responsive.bootstrap.js" />
+    <Content Include="Scripts\DataTables\responsive.bootstrap.min.js" />
+    <Content Include="Scripts\DataTables\responsive.bootstrap4.js" />
+    <Content Include="Scripts\DataTables\responsive.bootstrap4.min.js" />
+    <Content Include="Scripts\DataTables\responsive.foundation.js" />
+    <Content Include="Scripts\DataTables\responsive.foundation.min.js" />
+    <Content Include="Scripts\DataTables\responsive.jqueryui.js" />
+    <Content Include="Scripts\DataTables\responsive.jqueryui.min.js" />
+    <Content Include="Scripts\DataTables\responsive.semanticui.js" />
+    <Content Include="Scripts\DataTables\responsive.semanticui.min.js" />
+    <Content Include="Scripts\datepicker\datepicker_default.js" />
+    <Content Include="Scripts\datepicker\datepicker_icon_trigger.js" />
+    <Content Include="Scripts\gridview_checkbox\select_allcheck.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\respond_css\respond.min.js" />
+    <Content Include="Scripts\TableFilters.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\Actualizacion_datos.aspx" />
+    <Content Include="Views\Actualizacion_datos_PS.aspx" />
+    <Content Include="Views\Actualizacion_ubicacion.aspx" />
+    <Content Include="Views\actualizar_clinica.aspx" />
+    <Content Include="Views\actualizar_dias_vacaciones.aspx" />
+    <Content Include="Views\Agregar_familiares.aspx" />
+    <Content Include="Views\Catalogos_TRESS.aspx" />
+    <Content Include="Views\Certificaciones.aspx" />
+    <Content Include="Views\configurar_prestamo.aspx" />
+    <Content Include="Views\confirmacion_cartas.aspx" />
+    <Content Include="Views\confirmacion_periodos_escuelas.aspx" />
+    <Content Include="Views\confirmar_configuracion.aspx" />
+    <Content Include="Views\confirmar_datos.aspx" />
+    <Content Include="Views\Confirmar_opciones.aspx" />
+    <Content Include="Views\confirmar_reembolso.aspx" />
+    <Content Include="Views\Cursos\Search.aspx" />
+    <Content Include="Views\Cursos_regulatorios.aspx" />
+    <Content Include="Views\Cursos_regulatorios_elegir_sesion.aspx" />
+    <Content Include="Views\Cursos_regulatorios_modificar_periodo.aspx" />
+    <Content Include="Views\Cursos_regulatorios_pendientes.aspx" />
+    <Content Include="Views\Cursos_regulatorios_programacion_manual.aspx" />
+    <Content Include="Views\Cursos_regulatorios_sesiones_cursos.aspx" />
+    <Content Include="Views\Default.aspx" />
+    <Content Include="Views\DesbloqueoUsuarios.aspx" />
+    <Content Include="Views\Descarga_actas.aspx" />
+    <Content Include="Views\detalles_modificacion_carta.aspx" />
+    <Content Include="Views\disponibilidad_vacaciones.aspx" />
+    <Content Include="Views\familiar.aspx" />
+    <Content Include="Views\listaReprogramaciones.aspx" />
+    <Content Include="Views\Mantenimiento_Catalogos.aspx" />
+    <Content Include="Views\matriz_disponibilidadant.aspx" />
+    <Content Include="Views\matriz_disponibilidad2.aspx" />
+    <Content Include="Views\matriz_disponibilidad.aspx" />
+    <Content Include="Views\MenuKey.aspx" />
+    <Content Include="Views\modificar_cartas.aspx" />
+    <Content Include="Views\Opciones.aspx" />
+    <Content Include="Views\Periodos_escuelas.aspx" />
+    <Content Include="Views\Porcentajes_promedios.aspx" />
+    <Content Include="Views\prestamos.aspx" />
+    <Content Include="Views\Cursos\ProgramSchedule.aspx" />
+    <Content Include="Views\Reembolso_aprobacion.aspx" />
+    <Content Include="Views\Reembolso_aprobados.aspx" />
+    <Content Include="Views\Reembolso_escolar.aspx" />
+    <Content Include="Views\Reembolso_escolar_detalle.aspx" />
+    <Content Include="Views\Reembolso_rechazados.aspx" />
+    <Content Include="Views\Reimpresion.aspx" />
+    <Content Include="Views\Reimpresion_salario.aspx" />
+    <Content Include="Views\solicitudes_vac_aceptadas.aspx" />
+    <Content Include="Views\solicitudes_vac_rechazadas.aspx" />
+    <Content Include="Views\solicitud_vacacionesOLD.aspx" />
+    <Content Include="Views\Vacaciones.aspx" />
+    <Content Include="Views\ver_aceptados.aspx" />
+    <Content Include="Views\ver_prestamos.aspx" />
+    <Content Include="Views\ver_rechazados.aspx" />
+    <Content Include="Views\solicitud_vacaciones.aspx" />
+    <Content Include="Views\escaneoSolicitudes.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+    <Content Include="_Layout.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.min.map" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Site.Mobile.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="model\Filters.cs" />
+    <Compile Include="model\ReportGenerator.cs" />
+    <Compile Include="Views\Cursos\CoursesReports.aspx.cs">
+      <DependentUpon>CoursesReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos\CoursesReports.aspx.designer.cs">
+      <DependentUpon>CoursesReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos\EnrolledEmployee.aspx.cs">
+      <DependentUpon>EnrolledEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos\EnrolledEmployee.aspx.designer.cs">
+      <DependentUpon>EnrolledEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos\MenuSessions.aspx.cs">
+      <DependentUpon>MenuSessions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos\MenuSessions.aspx.designer.cs">
+      <DependentUpon>MenuSessions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos\Reprogramming.aspx.cs">
+      <DependentUpon>Reprogramming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos\Reprogramming.aspx.designer.cs">
+      <DependentUpon>Reprogramming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos\SessionAttendance.aspx.cs">
+      <DependentUpon>SessionAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos\SessionAttendance.aspx.designer.cs">
+      <DependentUpon>SessionAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos\MenuCourses.aspx.cs">
+      <DependentUpon>MenuCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos\MenuCourses.aspx.designer.cs">
+      <DependentUpon>MenuCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos\Sessions.aspx.cs">
+      <DependentUpon>Sessions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos\Sessions.aspx.designer.cs">
+      <DependentUpon>Sessions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="model\Click.cs" />
+    <Compile Include="model\constancia.cs" />
+    <Compile Include="model\Courses\Course.cs" />
+    <Compile Include="model\Courses\Enrollment.cs" />
+    <Compile Include="model\Courses\Session.cs" />
+    <Compile Include="model\Employee.cs" />
+    <Compile Include="model\fecha_cartas.cs" />
+    <Compile Include="model\LdapAuthentication.cs" />
+    <Compile Include="model\RequestFile.cs" />
+    <Compile Include="model\SendPrinter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Actualizacion_datos.aspx.cs">
+      <DependentUpon>Actualizacion_datos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Actualizacion_datos.aspx.designer.cs">
+      <DependentUpon>Actualizacion_datos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Actualizacion_datos_PS.aspx.cs">
+      <DependentUpon>Actualizacion_datos_PS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Actualizacion_datos_PS.aspx.designer.cs">
+      <DependentUpon>Actualizacion_datos_PS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Actualizacion_ubicacion.aspx.cs">
+      <DependentUpon>Actualizacion_ubicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Actualizacion_ubicacion.aspx.designer.cs">
+      <DependentUpon>Actualizacion_ubicacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\actualizar_clinica.aspx.cs">
+      <DependentUpon>actualizar_clinica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\actualizar_clinica.aspx.designer.cs">
+      <DependentUpon>actualizar_clinica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\actualizar_dias_vacaciones.aspx.cs">
+      <DependentUpon>actualizar_dias_vacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\actualizar_dias_vacaciones.aspx.designer.cs">
+      <DependentUpon>actualizar_dias_vacaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Agregar_familiares.aspx.cs">
+      <DependentUpon>Agregar_familiares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Agregar_familiares.aspx.designer.cs">
+      <DependentUpon>Agregar_familiares.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Catalogos_TRESS.aspx.cs">
+      <DependentUpon>Catalogos_TRESS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Catalogos_TRESS.aspx.designer.cs">
+      <DependentUpon>Catalogos_TRESS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Certificaciones.aspx.cs">
+      <DependentUpon>Certificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Certificaciones.aspx.designer.cs">
+      <DependentUpon>Certificaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\configurar_prestamo.aspx.cs">
+      <DependentUpon>configurar_prestamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\configurar_prestamo.aspx.designer.cs">
+      <DependentUpon>configurar_prestamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\confirmacion_cartas.aspx.cs">
+      <DependentUpon>confirmacion_cartas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\confirmacion_cartas.aspx.designer.cs">
+      <DependentUpon>confirmacion_cartas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\confirmacion_periodos_escuelas.aspx.cs">
+      <DependentUpon>confirmacion_periodos_escuelas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\confirmacion_periodos_escuelas.aspx.designer.cs">
+      <DependentUpon>confirmacion_periodos_escuelas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\confirmar_configuracion.aspx.cs">
+      <DependentUpon>confirmar_configuracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\confirmar_configuracion.aspx.designer.cs">
+      <DependentUpon>confirmar_configuracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\confirmar_datos.aspx.cs">
+      <DependentUpon>confirmar_datos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\confirmar_datos.aspx.designer.cs">
+      <DependentUpon>confirmar_datos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Confirmar_opciones.aspx.cs">
+      <DependentUpon>Confirmar_opciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Confirmar_opciones.aspx.designer.cs">
+      <DependentUpon>Confirmar_opciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\confirmar_reembolso.aspx.cs">
+      <DependentUpon>confirmar_reembolso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\confirmar_reembolso.aspx.designer.cs">
+      <DependentUpon>confirmar_reembolso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos_regulatorios.aspx.cs">
+      <DependentUpon>Cursos_regulatorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos_regulatorios.aspx.designer.cs">
+      <DependentUpon>Cursos_regulatorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos_regulatorios_elegir_sesion.aspx.cs">
+      <DependentUpon>Cursos_regulatorios_elegir_sesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos_regulatorios_elegir_sesion.aspx.designer.cs">
+      <DependentUpon>Cursos_regulatorios_elegir_sesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos_regulatorios_modificar_periodo.aspx.cs">
+      <DependentUpon>Cursos_regulatorios_modificar_periodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos_regulatorios_modificar_periodo.aspx.designer.cs">
+      <DependentUpon>Cursos_regulatorios_modificar_periodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos_regulatorios_pendientes.aspx.cs">
+      <DependentUpon>Cursos_regulatorios_pendientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos_regulatorios_pendientes.aspx.designer.cs">
+      <DependentUpon>Cursos_regulatorios_pendientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos_regulatorios_programacion_manual.aspx.cs">
+      <DependentUpon>Cursos_regulatorios_programacion_manual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos_regulatorios_programacion_manual.aspx.designer.cs">
+      <DependentUpon>Cursos_regulatorios_programacion_manual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos_regulatorios_sesiones_cursos.aspx.cs">
+      <DependentUpon>Cursos_regulatorios_sesiones_cursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos_regulatorios_sesiones_cursos.aspx.designer.cs">
+      <DependentUpon>Cursos_regulatorios_sesiones_cursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DesbloqueoUsuarios.aspx.cs">
+      <DependentUpon>DesbloqueoUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DesbloqueoUsuarios.aspx.designer.cs">
+      <DependentUpon>DesbloqueoUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Descarga_actas.aspx.cs">
+      <DependentUpon>Descarga_actas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Descarga_actas.aspx.designer.cs">
+      <DependentUpon>Descarga_actas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\detalles_modificacion_carta.aspx.cs">
+      <DependentUpon>detalles_modificacion_carta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\detalles_modificacion_carta.aspx.designer.cs">
+      <DependentUpon>detalles_modificacion_carta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\disponibilidad_vacaciones.aspx.cs">
+      <DependentUpon>disponibilidad_vacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\disponibilidad_vacaciones.aspx.designer.cs">
+      <DependentUpon>disponibilidad_vacaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\familiar.aspx.cs">
+      <DependentUpon>familiar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\familiar.aspx.designer.cs">
+      <DependentUpon>familiar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\listaReprogramaciones.aspx.cs">
+      <DependentUpon>listaReprogramaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\listaReprogramaciones.aspx.designer.cs">
+      <DependentUpon>listaReprogramaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mantenimiento_Catalogos.aspx.cs">
+      <DependentUpon>Mantenimiento_Catalogos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Mantenimiento_Catalogos.aspx.designer.cs">
+      <DependentUpon>Mantenimiento_Catalogos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\matriz_disponibilidadant.aspx.cs">
+      <DependentUpon>matriz_disponibilidadant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\matriz_disponibilidadant.aspx.designer.cs">
+      <DependentUpon>matriz_disponibilidadant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\matriz_disponibilidad2.aspx.cs">
+      <DependentUpon>matriz_disponibilidad2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\matriz_disponibilidad2.aspx.designer.cs">
+      <DependentUpon>matriz_disponibilidad2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\matriz_disponibilidad.aspx.cs">
+      <DependentUpon>matriz_disponibilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\matriz_disponibilidad.aspx.designer.cs">
+      <DependentUpon>matriz_disponibilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MenuKey.aspx.cs">
+      <DependentUpon>MenuKey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\MenuKey.aspx.designer.cs">
+      <DependentUpon>MenuKey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\modificar_cartas.aspx.cs">
+      <DependentUpon>modificar_cartas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\modificar_cartas.aspx.designer.cs">
+      <DependentUpon>modificar_cartas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Opciones.aspx.cs">
+      <DependentUpon>Opciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Opciones.aspx.designer.cs">
+      <DependentUpon>Opciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Periodos_escuelas.aspx.cs">
+      <DependentUpon>Periodos_escuelas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Periodos_escuelas.aspx.designer.cs">
+      <DependentUpon>Periodos_escuelas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Porcentajes_promedios.aspx.cs">
+      <DependentUpon>Porcentajes_promedios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Porcentajes_promedios.aspx.designer.cs">
+      <DependentUpon>Porcentajes_promedios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\prestamos.aspx.cs">
+      <DependentUpon>prestamos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\prestamos.aspx.designer.cs">
+      <DependentUpon>prestamos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos\ProgramSchedule.aspx.cs">
+      <DependentUpon>ProgramSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos\ProgramSchedule.aspx.designer.cs">
+      <DependentUpon>ProgramSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reembolso_aprobacion.aspx.cs">
+      <DependentUpon>Reembolso_aprobacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Reembolso_aprobacion.aspx.designer.cs">
+      <DependentUpon>Reembolso_aprobacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reembolso_aprobados.aspx.cs">
+      <DependentUpon>Reembolso_aprobados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Reembolso_aprobados.aspx.designer.cs">
+      <DependentUpon>Reembolso_aprobados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reembolso_escolar.aspx.cs">
+      <DependentUpon>Reembolso_escolar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Reembolso_escolar.aspx.designer.cs">
+      <DependentUpon>Reembolso_escolar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reembolso_escolar_detalle.aspx.cs">
+      <DependentUpon>Reembolso_escolar_detalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Reembolso_escolar_detalle.aspx.designer.cs">
+      <DependentUpon>Reembolso_escolar_detalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reembolso_rechazados.aspx.cs">
+      <DependentUpon>Reembolso_rechazados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Reembolso_rechazados.aspx.designer.cs">
+      <DependentUpon>Reembolso_rechazados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reimpresion.aspx.cs">
+      <DependentUpon>Reimpresion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Reimpresion.aspx.designer.cs">
+      <DependentUpon>Reimpresion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reimpresion_salario.aspx.cs">
+      <DependentUpon>Reimpresion_salario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Reimpresion_salario.aspx.designer.cs">
+      <DependentUpon>Reimpresion_salario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\solicitudes_vac_aceptadas.aspx.cs">
+      <DependentUpon>solicitudes_vac_aceptadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\solicitudes_vac_aceptadas.aspx.designer.cs">
+      <DependentUpon>solicitudes_vac_aceptadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\solicitudes_vac_rechazadas.aspx.cs">
+      <DependentUpon>solicitudes_vac_rechazadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\solicitudes_vac_rechazadas.aspx.designer.cs">
+      <DependentUpon>solicitudes_vac_rechazadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\solicitud_vacacionesOLD.aspx.cs">
+      <DependentUpon>solicitud_vacacionesOLD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\solicitud_vacacionesOLD.aspx.designer.cs">
+      <DependentUpon>solicitud_vacacionesOLD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Vacaciones.aspx.cs">
+      <DependentUpon>Vacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Vacaciones.aspx.designer.cs">
+      <DependentUpon>Vacaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ver_aceptados.aspx.cs">
+      <DependentUpon>ver_aceptados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ver_aceptados.aspx.designer.cs">
+      <DependentUpon>ver_aceptados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ver_prestamos.aspx.cs">
+      <DependentUpon>ver_prestamos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ver_prestamos.aspx.designer.cs">
+      <DependentUpon>ver_prestamos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ver_rechazados.aspx.cs">
+      <DependentUpon>ver_rechazados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ver_rechazados.aspx.designer.cs">
+      <DependentUpon>ver_rechazados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\solicitud_vacaciones.aspx.cs">
+      <DependentUpon>solicitud_vacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\solicitud_vacaciones.aspx.designer.cs">
+      <DependentUpon>solicitud_vacaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\escaneoSolicitudes.aspx.cs">
+      <DependentUpon>escaneoSolicitudes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\escaneoSolicitudes.aspx.designer.cs">
+      <DependentUpon>escaneoSolicitudes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layout.Master.cs">
+      <DependentUpon>_Layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layout.Master.designer.cs">
+      <DependentUpon>_Layout.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Account\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="ArchivoVacaciones\" />
+    <Folder Include="Content\themes\base\minified\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Content\Calendar.css</ApplicationManifest>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57469</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52153/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\..\SIE\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\SIE\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <!-- <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\SIE\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\SIE\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target> -->
+  <Import Project="..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\..\..\Users\amarquezesqu\source\repos\Sie_Key_User\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

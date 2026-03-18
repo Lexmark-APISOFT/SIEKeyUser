@@ -1,0 +1,51 @@
+﻿#titulo_confPrestamo {
+    font-family:Calibri Light;
+    font-size:25px;
+    font-weight:bold;
+}
+
+#guardar_configurar {
+    padding: 5px 29px;
+    background-color: rgb(0,128,0);
+    border-color: rgb(0,128,0);
+    color: #fff;
+    font-weight: bold;
+    font-family: Calibri Light;
+    font-size: 18px;
+    margin-right: 2%;
+    }
+
+#cancelar_configurar {
+    padding: 5px 29px;
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:18px;
+    margin-right:2%;
+    }
+
+/**************************************************/
+#tb_confPrestamo td{
+    padding:5px 10px 20px 10px;
+}
+#tb_confPrestamo {
+    margin: 0 0 0 35%;
+}
+div#center_confPrestamo {
+    margin:3% 0% 0% 10%;
+    width:80%;
+  
+}
+
+    div#center_confPrestamo #Table2 {
+        margin:0% 0px 0% 0%;
+}
+    div#center_confPrestamo #GridView1 {
+        margin: 2% 0% 0% 7%;
+}
+    div#center_confPrestamo #tb_bemp {
+        margin: 11% 0% 0% 35%;
+
+    }

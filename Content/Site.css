@@ -1,0 +1,228 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border-width: 1px;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+    margin:0;
+    background-color:#FFF;
+    text-align:center;
+    background-image:url('../Images/background.jpg');
+    background-repeat:no-repeat;
+    font-family:Calibri Light;
+    color:#000;
+}
+
+a {
+    text-decoration:underline;
+    color:#000;
+    font-weight:bold;
+}
+
+#logo {
+    width:80%;
+    text-align:left;
+}
+
+#img {
+    width:25%;
+}
+
+.leyenda {
+    position:absolute;
+    bottom:2%;
+    left:2%;
+    color:#fff;
+    font-size:40px;
+    font-weight:bold;
+    z-index:-1;
+}
+
+#img_deVentanas {
+    position:absolute;
+    top:7%;
+    right:2%;
+    width:20%;
+}
+
+.boton {
+    background-color:rgb(220,220,220);
+    border-radius: 200px;
+    color:#000;
+    font-size: 22px;
+    font-weight: bold;
+    padding:25px 20px 25px 20px;
+    box-shadow: inset 0 2px 2px 0 #000;
+    border-bottom: solid 5px #b2b1b1;
+    bottom:5%;
+    right:5%;
+    position:absolute;
+    behavior: url(../Content/PIE.htc);
+}
+
+.botonn {
+    background-color:rgb(220,220,220);
+    border-radius: 200px;
+    color:#000;
+    font-size: 22px;
+    font-weight: bold;
+    padding:25px 20px 25px 20px;
+    box-shadow: inset 0 2px 2px 0 #000;
+    border-bottom: solid 5px #b2b1b1;
+    bottom:1%;
+    right:48%;
+    position:absolute;
+    behavior: url(../Content/PIE.htc);
+}
+
+.t_right {
+    text-align:right;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:18px;
+}
+
+.t_left {
+    text-align:left;
+    font-family:Calibri Ligth;
+    font-size:18px;
+}
+
+#aceptar_ac {
+    background-color: rgb(0, 173, 33);
+    border-color: rgb(0, 173, 33);
+    color: #fff;
+    font-weight: bold;
+    font-family: Calibri Light;
+    font-size: 20px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 2%;
+}
+
+#noaceptar_ac {
+    background-color: rgb(0, 173, 33);
+    border-color: rgb(0, 173, 33);
+    color: #fff;
+    font-weight: bold;
+    font-family: Calibri Light;
+    font-size: 20px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 2%;
+    margin-right: 22%;
+}
+
+/**************************************** Centrar Tabla *****************************************/
+div.center {
+    margin-top:2%;
+    text-align:center;
+    width:100%;
+}
+
+    div.center table {
+        margin:0 auto;
+    }
+
+/************************************************ GRIDVIEW ESTILO ***************************************************/
+.Row {
+    background-color:#FFF;
+}
+
+.AltRow {
+    background-color:rgb(220,220,220);
+}
+
+.grid {
+    text-align:center;
+    margin:0% auto 0% 0px;
+    font-size:18px;
+    font-family:Calibri Light;
+    padding-top: 0px;
+}
+
+.gridCertificaciones {
+    text-align:center;
+    font-size:18px;
+    font-family:Calibri Light;
+    background-color:#FFF;
+    align-content: center;
+}
+
+.grid th {
+    font-family: Calibri Light;
+    text-align: center;
+    background-color: rgb(0, 173, 33);
+    color: #fff;
+    border-color: #000;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+    .grid td {
+        padding:0%;
+        font-size:17px;
+        border-width :1px;
+        /*word-wrap:break-word ;*/
+    }
+
+
+    .gridD {
+    text-align:center;
+    margin:0% auto 0% 0px;
+    font-size:18px;
+    font-family:Calibri Light;
+    padding-top: 0px;
+}
+
+        .gridD th {
+            font-family: Calibri Light;
+            text-align: center;
+            background-color: rgb(0, 173, 33);
+            color: #fff;
+            border-color: #000;
+            border-top-width: 2px;
+            border-bottom-width: 2px;
+        }
+
+    .gridD td {
+        padding:1%;
+        font-size:17px;
+        border-width :1px;
+        width:auto;
+        /*word-wrap:break-word*/
+    }
+    .gridD .pgt td {
+        text-align: center;
+        font-size: 19px;
+        line-height: normal;
+        padding: 0 6px;
+        padding-top: 1%;
+    }
+    .grid .pgt td {
+        text-align: center;
+        font-size: 19px;
+        line-height: normal;
+        padding: 0 6px;
+        padding-top: 1%;
+    }
+/************************************************ FIN ***************************************************/

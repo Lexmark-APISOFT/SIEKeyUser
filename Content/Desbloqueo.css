@@ -1,0 +1,64 @@
+﻿#des_buscar {
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:18px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+#des_desbloquear {
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    padding-left:29px;
+    padding-right:29px;
+    padding-bottom:5px;
+    padding-top:5px;
+    margin-right:2%;
+}
+
+#des_reestablecer {
+    background-color:rgb(0,128,0);
+    border-color:rgb(0,128,0);
+    color:#fff;
+    font-weight:bold;
+    font-family:Calibri Light;
+    font-size:20px;
+    padding-left:29px;
+    padding-right:29px;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+#div_mensaje {
+    font-family:Calibri Light;
+    font-size:18px;
+    font-weight:bold;
+    color:red;
+    width:100%;
+    margin-bottom:2%;
+}
+
+/**************************************************/
+#tb_des_buscar td{
+    padding:5px 10px 2px 10px;
+}
+
+div#center_des_buscar {
+    display:block;
+    margin-top:2%;
+    margin-left:10%;
+    width:80%;
+}
+
+    div#center_des_buscar table {
+        margin:5% auto;
+    }

@@ -1,0 +1,30 @@
+﻿#titulo_familiar {
+    font-family:Calibri Light;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.fam_ancho {
+    width:40%;
+}
+
+#prettyName {
+    font-family:Calibri Light;
+    font-weight:bold;
+    font-size:18px;
+}
+
+/**************************************************/
+#tb_familiar td{
+    padding:5px 10px 2px 10px;
+}
+
+div#center_familiar {
+    margin:5% auto;
+    width:80%;
+}
+
+    div#center_familiar table {
+        margin:2% auto;
+        margin-bottom:2%;
+    }

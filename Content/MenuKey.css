@@ -1,0 +1,27 @@
+﻿.img_menu {
+    width:270px;
+    height:60px;
+}
+
+#nombre {
+    position:absolute;
+    top:2%;
+    right:2%;
+    font-size:28px;
+    font-family:Calibri Light;
+    color: rgb(127, 127, 127);
+}
+
+/**************************************************/
+#tb_menu_key td{
+    padding:10px 10px 10px 10px;
+}
+
+div#center_menu_key {
+    margin:2% auto;
+    width:80%;
+}
+
+    div#center_menu_key table {
+        margin:0% auto;
+    }
